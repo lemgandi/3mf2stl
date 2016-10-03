@@ -36,6 +36,10 @@ convert_to_stl.sh script to produce "Lion_Cookie_Cutter.stl".  You
 should be able to import this stl file into the 3d software of your
 choice and see a funny cookie cutter thing.
 
+This program has a usage message with more details on how to use it.
+You can see the usage message and version number by typing its name 
+at the command line.
+
 == License
 
 This code is based on the work of Shawn Haylaka, which was released to
