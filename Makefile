@@ -36,7 +36,7 @@ TESTOUT=Lion_Cookie_Cutter.stl
 top: $(EXEC)
 
 test: $(EXEC) ./convert_to_stl.sh Lion_Cookie_Cutter.3mf
-	./convert_to_stl.sh Lion_Cookie_Cutter.3mf 
+	chmod +x ./convert_to_stl.sh ; ./convert_to_stl.sh Lion_Cookie_Cutter.3mf 
 
 
 
@@ -49,7 +49,7 @@ $(EXEC) : main.o tinyxml2.o triangle.o vertex_3.o utils.o
 main.o: main.cpp 
 	$(GCC) -c  -o main.o main.cpp
 
-tinyxml2.o : tinyxml2.cpp
+tinyxml2.o : tinyxml2.cpp tinyxml2.h
 	$(GCC) -c -o tinyxml2.o tinyxml2.cpp
 
 
