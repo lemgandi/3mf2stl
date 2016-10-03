@@ -39,7 +39,7 @@ choice and see a funny cookie cutter thing.
 == License
 
 This code is based on the work of Shawn Haylaka, which was released to
-the public domain.
+the public domain. 
 
 This code is Copyright(c) Charles Shapiro and Shawn Haylaka, October
 2016.
@@ -60,3 +60,8 @@ This code is Copyright(c) Charles Shapiro and Shawn Haylaka, October
 The "tinyxml2.cpp" and "tinyxml2.h" files used in this program were
 written by Lee Thomason; they have their own licenses which are in the
 referenced source files.
+
+== Contact
+
+Charles Shapiro
+charles.shapiro@tomshiro.org
