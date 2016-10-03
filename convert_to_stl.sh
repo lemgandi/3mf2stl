@@ -24,6 +24,31 @@ STEMNAME=$(basename $1 .3mf)
 TMPZIP=${STEMNAME}.$$
 OUTFILE=${STEMNAME}.stl
 
+Usage() 
+{
+  echo Usage: $0 infile
+  cat <<EOU
+  Convert the .3mf infile to a .stl outfile.
+EOU
+}
+#
+# Main Line
+#
+# echo $#
+
+if [ $# -ne 1 ]
+then
+   Usage $0
+   exit 1
+fi
+
+if [ ! -f $1 ]
+then
+   echo I cannot see the file [$1].
+   Usage $0
+   exit 1
+fi
+
 mkdir ${TMPDIR}
 cp $1 ${TMPDIR}
 ( cd $TMPDIR ; unzip $1 ; rm $1) > /dev/null

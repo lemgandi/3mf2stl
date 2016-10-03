@@ -83,7 +83,7 @@ int main(int argc, char **argv)
    memset(outfilename,0,sizeof(outfilename));
 
    static struct option longopts [] = {
-      {"ascii",no_argument,&ascii_output_flag,1},
+      {"ascii",no_argument,&ascii_output_flag,'a'},
       {"infile",required_argument,0,'i'},
       {"outfile",required_argument,0,'o'},
       {0,0,0,0}
@@ -93,7 +93,8 @@ int main(int argc, char **argv)
    while ((getopt_continue = getopt_long(argc,argv,"ai:o:",longopts,&longidx)) != -1)
       {
          switch (getopt_continue) {
-	 case 0:
+	 case 'a':
+            ascii_output_flag = 1;
             break;
 	 case 'i':
 	    strncpy(infilename,optarg,sizeof(infilename)-1);
@@ -224,7 +225,7 @@ int main(int argc, char **argv)
 	cout << "Read " << triangles.size() << " triangles..." << endl;
 
 	// Write triangles to STL file...
-      
+
   if(ascii_output_flag)
      save_to_ASCII_stereo_lithography_file(triangles, outfilename);
   else
