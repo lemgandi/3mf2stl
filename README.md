@@ -41,7 +41,7 @@ choice and see a funny cookie cutter thing.
 This code is based on the work of Shawn Haylaka, which was released to
 the public domain. 
 
-This code is Copyright(c) Charles Shapiro and Shawn Haylaka, October
+This code is Copyright(c) Charles Shapiro and Shawn Halayka, October
 2016.
 
     This program is free software: you can redistribute it and/or modify
