@@ -44,7 +44,7 @@ clean:
 	rm -f $(EXEC) *.o $(TESTOUT)
 
 $(EXEC) : main.o tinyxml2.o triangle.o vertex_3.o utils.o
-	$(GLN) -o $(EXEC) -lzip main.o tinyxml2.o triangle.o vertex_3.o utils.o
+	$(GLN) -o $(EXEC) main.o tinyxml2.o triangle.o vertex_3.o utils.o -lzip
 
 main.o: main.cpp 
 	$(GCC) -c  -o main.o main.cpp
