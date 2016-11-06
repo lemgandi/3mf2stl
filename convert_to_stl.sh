@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# set -x
 # Copyright Charles Shapiro, 2 Oct 2016
 
 #    This program is free software: you can redistribute it and/or modify
@@ -18,8 +18,8 @@
 
 
 # Constants -- change these to debug this script
-EXEC=./3mf2stl
-TMPDIR=/tmp/$0.$$
+EXEC=3mf2stl
+TMPDIR=/tmp/${EXEC}.$$
 STEMNAME=$(basename $1 .3mf)
 TMPZIP=${STEMNAME}.$$
 OUTFILE=${STEMNAME}.stl
