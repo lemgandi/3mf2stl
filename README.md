@@ -1,9 +1,11 @@
-= 3mf2stl
+
+
+# 3mf2stl
 
 This is a simple command-line utility to convert 3d ".3mf" files to
 the ".stl" files used by most 3d printer slicing software.
 
-== Build and Install
+## Build and Install
 
 You will need a working c++ development environment to make this
 code. You must also install a zip development library, usually
@@ -17,15 +19,16 @@ Unzip the source code to an empty directory and type "make".  It
 compiles without errors or warnings on Debian 3.2 ("Sarge") and Debian
 8.0 ("Jessie").  This will produce an executable called "3mf2stl".
 
-== Using
+## Using
 
 The current version of the Debian zip libraries won't decompress
 ".3mf" files, apparently because of a file format dispute between the
 3mf folks and the Debian folks.  The symptom of this Trouble is the
 following error message:
 
+```
 Error on [Lion_Cookie_Cutter.3mf] : Multi-disk zip archives not supported
-
+```
 
 The current work-around is to unzip the .3mf file with p7zip, then
 re-zip it with the same utility. That produces a zip archive which the
@@ -40,7 +43,7 @@ This program has a usage message with more details on how to use it.
 You can see the usage message and version number by typing its name 
 at the command line.
 
-== License
+## License
 
 This code is based on the work of Shawn Haylaka, which was released to
 the public domain. 
@@ -65,7 +68,7 @@ The "tinyxml2.cpp" and "tinyxml2.h" files used in this program were
 written by Lee Thomason; they have their own licenses which are in the
 referenced source files.
 
-== Contact
+## Contact
 
 Charles Shapiro
 charles.shapiro@tomshiro.org
